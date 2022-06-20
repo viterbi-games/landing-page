@@ -1,0 +1,246 @@
+/*general style*/
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.section-title {
+    font-family: 'Linear Sans', sans-serif;
+    font-size: 36px;
+    text-align: left;
+}
+
+.description-text {
+    text-align: left;
+    line-height: 36px;
+}
+
+.feature {
+    text-align: left;
+}
+
+
+/*header*/
+.header {
+    display : grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    position : fixed;
+    border-bottom: solid 1px lightgray;
+    padding : 12px;
+    top : 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.nav-items-list li {
+    list-style: none;
+}
+
+.nav-items-list li a {
+    text-decoration: none;
+}
+
+/*main*/
+.main {
+    padding-top: 170px;
+}
+
+/*main - hero*/
+.hero-buttons, .nav-items-list {
+    gap : 0.8rem;    
+}
+
+.hero-title {
+    font-size: 64px;
+    margin-bottom: 0;
+}
+
+.hero-btn {
+    display: inline-block;
+}
+
+/*templates section*/
+.template {
+    border: dotted 1px #6952f9;
+    padding : 80px;
+}
+
+
+/*launch section*/
+.launch-steps {
+    display : flex;
+    flex-direction: column;
+    gap : 12px;
+} 
+
+.launch-img {
+    border : dotted 1px blue;
+    height: 100%;
+    width: 100%;
+}
+
+.launch-step {
+    display : flex;
+    align-items: center;
+    gap : 16px;
+}
+
+.title,
+.paragraph {
+    text-align: left;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.icon-frame {
+    background-color: #6952f9;
+    border-radius: 10px;
+    display: inline-block;
+    padding : 24px;
+}
+
+.icon {
+   color : #fff;
+   font-size: 32px;
+}
+
+/*faq sections*/
+.faq-two-sections {
+    display : flex;
+    gap : 84px;
+}
+
+.left-questions, .right-questions {
+    display : flex;
+    gap : 48px;
+    flex-direction: column;
+}
+
+.question {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.icon-frame-faq  {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #000;
+    align-items: center;
+    width : 40px;
+    height: 40px;
+}
+
+.icon-frame-faq .icon {
+    font-size: 24px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    gap : 64px;
+}
+
+/*footer section*/
+.footer-section {
+    padding : 18px 0;
+    border-top : solid 1px #000;
+}
+
+.copyright-text {
+    text-align: left;
+}
+
+
+/*HELPER CLASSES*/ 
+.container-large {
+    padding: 0 300px;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.medium-large-padding {
+    padding-right : 122px;
+}
+
+.flex-centered {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-with-3-equal-columns {
+    display : grid;
+    gap : 18px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-with-4-equal-columns {
+    display: grid;
+    gap : 16px;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.grid-with-2-equal-columns {
+    display : grid;
+    align-items: center;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 5rem;
+    grid-row-gap: 4rem;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+}
+
+.launch-section {
+    align-self: start;
+}
+
+.text-description {
+    text-align: left;
+}
+
+.large-margin-top {
+    margin-top: 70px;
+}
+
+.large-margin-bottom {
+    margin-bottom: 80px;
+}
+
+.btn {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    max-width: 150px;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    border-radius: 85px;
+    background-color: #6952f9;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.highlight-feature {
+    color :#6952f9;
+}
