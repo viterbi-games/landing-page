@@ -91,10 +91,22 @@ body {
 
 /*templates section*/
 .template {
-    border: dotted 1px #6952f9;
-    padding : 80px;
+    display : flex;
+    flex-direction: column;
+    background-color: #fbfbfb;
 }
 
+.template-details {
+    text-align: left;
+}
+
+.template-description {
+    line-height: 30px;
+}
+
+.secondary-info {
+    color : #868e96;
+}
 
 /*launch section*/
 .launch-steps {
@@ -145,8 +157,27 @@ body {
 
 .left-questions, .right-questions {
     display : flex;
-    gap : 48px;
     flex-direction: column;
+}
+
+.question-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.asnwer p {
+    text-align: left;
+    color : #000;
+}
+
+.asnwer {
+    background-color: #fbfbfb;
+}
+
+.question-first-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .question {
@@ -243,14 +274,6 @@ body {
 }
 
 /*talk to sales section*/
-.sales {
-    background-color: #fbfbfb;
-}
-
-.talk-to-sales {
-    padding: 60px 0;
-}
-
 .call-icon {
     background-color: #ffe05c;
 }
@@ -290,6 +313,15 @@ body {
 .container-large {
     padding: 0 300px;
 }
+
+.colored-bckgrnd {
+    background-color: #fbfbfb;
+}
+
+.top-down-padding {
+    padding: 60px 0;
+}
+
 
 .text-center {
     text-align: center;
