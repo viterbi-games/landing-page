@@ -5,27 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
     <title>Viterbi - Turn your computer into a game studio</title>
 </head>
 <body>
     
+    <!-- HEADER SECTION -->
     <header class="header">
         <section class="logo">
-            <img src="" alt="Viterbi logo">
+            <img src="./assets/logo.svg" alt="Viterbi logo" width="130">
         </section>
         <section class="nav-section">
             <nav class="nav-items">
-                <ul class="nav-items-list flex-centered">
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Why Viterbi?</a></li>
-                    <li><a href="#">How it works?</a></li>
-                    <li><a href="#">FAQ</a></li>
+                <ul class="nav-items-list">
+                    <li class="nav-list"><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li class="nav-list"><a href="#whyus" class="nav-link">Why Viterbi?</a></li>
+                    <li class="nav-list"><a href="#hiw" class="nav-link">How it works?</a></li>
+                    <li class="nav-list"><a href="#faq" class="nav-link">FAQ</a></li>
                 </ul>
             </nav>
         </section>
@@ -36,15 +33,17 @@
         </section>
     </header>
 
+
+    <!-- MAIN SECTION -->
     <main class="main">
 
         <!-- HERO SECTION -->
         <section class="hero container-large">
             <section class="hero-textual-section">
-                <h1 class="hero-title">
-                    Build Advanced visualizations <br>with <span class="highlight-feature">ease</span>
+                <h1 class="hero-title" style="padding: 0 300px; font-size : 40px">
+                    Build Stunning visualizations <br>with <span class="highlight-feature">ease</span>
                 </h1>
-                <p class="brief-description description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, rem esse inventore ipsa fugiat architecto ut doloremque harum, perspiciatis, in aut? Magni impedit placeat modi ullam fuga vero non ex?</p>
+                <p class="brief-description hero-text description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, rem esse inventore ipsa fugiat architecto ut </p>
             </section>
     
             <section class="hero-buttons flex-centered">
@@ -88,7 +87,7 @@
         </section>
 
         <!-- LAUNCH SECTION -->
-        <section class="grid-with-2-equal-columns container-large large-margin-top">
+        <section class="grid-with-2-equal-columns container-large large-margin-top" id="hiw">
 
             <div class="launch-section">
                 <div class="launch-section-title">
@@ -140,16 +139,14 @@
                 
 
             </div>
-
         
         </section>
 
 
         <!-- WHY VITERBI SECTION -->
-        <section class="product-features container-large large-margin-top">
+        <section class="product-features container-large large-margin-top" id="whyus">
             <h2 class="section-title">Why Viterbi?</h2>
             <p class="description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis incidunt ipsam reiciendis perferendis deserunt eos nihil, dignissimos sapiente libero rem eius facilis suscipit, distinctio officia illo! Iste, numquam fugiat.</p>
-
 
             <div class="grid-with-4-equal-columns">
                
@@ -237,30 +234,190 @@
             </p>
         </section>
 
-        <section class="project-templates grid-with-3-equal-columns container-large">
+        <section class="project-templates grid-with-3-equal-columns container-large" id="pricing">
 
-            <section class="template">
-               
+            <section class="plan">
+                <div class="plan-description">
+                    <p class="plan-title">Enterprise Plan 🚀</p>
+                    <p class="plan-text-description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, illo nam. Atque ut quasi quibusdam quia.
+                    </p>
+                </div>
+
+                <div class="plan-price">
+                    <p class="price">$600/Month </p>
+                    <div class="redirect-icon-frame">
+                        <ion-icon name="chevron-forward-outline" class="redirect-icon"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="plan-features">
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="close-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="close-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="checkmark-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="checkmark-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="checkmark-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+                </div>
+
+                <div class="feature-ctb">
+                    <a href="#" class="start-project btn">Start A Project</a>
+                </div>
+                
             </section>
 
-            <section class="template">
-               
-            </section>
+            <section class="plan">
+                <div class="plan-description">
+                     <p class="plan-title">Creator Plan 🎨</p>
+                     <p class="plan-text-description">
+                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, illo nam. Atque ut quasi quibusdam quia.
+                     </p>
+                </div>
 
-            <section class="template">
-               
-            </section>
+                <div class="plan-price">
+                    <p class="price">$20/Month </p>
+                    <div class="redirect-icon-frame">
+                        <ion-icon name="chevron-forward-outline" class="redirect-icon"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="plan-features">
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="checkmark-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="checkmark-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="close-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="close-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="checkmark-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+                </div>
+
+                <div class="feature-ctb">
+                    <a href="#" class="start-project btn">Start A Project</a>
+                </div>
+
+             </section>
+
+
+             <section class="plan">
+                <div class="plan-description">
+                     <p class="plan-title">Free Plan ⚡</p>
+                     <p class="plan-text-description">
+                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, illo nam. Atque ut quasi quibusdam quia.
+                     </p>
+                </div>
+
+                <div class="plan-price">
+                    <p class="price">$0 For life </p>
+                    <div class="redirect-icon-frame">
+                        <ion-icon name="chevron-forward-outline" class="redirect-icon"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="plan-features">
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="checkmark-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="checkmark-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="checkmark-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="checkmark-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+
+                    <div class="feature">
+                        <div>
+                            <ion-icon name="checkmark-outline" class="feature-icon"></ion-icon>
+                        </div>
+                        <p class="feature-text">3D Visualizations</p>
+                    </div>
+                </div>
+
+                <div class="feature-ctb">
+                    <a href="#" class="start-project btn">Start A Project</a>
+                </div>
+
+             </section>
             
         </section>
 
-
-
         <!-- FAQ SECTION -->
-        <section class="faq container-large large-margin-top">
+        <section class="faq container-large large-margin-top" id="faq">
             <h2 class="section-title large-margin-bottom">Frequently Asked Questions</h2>
 
             <div class="faq-two-sections">
-
 
                 <div class="right-questions">
                     <div class="question">
@@ -283,12 +440,9 @@
                             <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
                         </div>
                     </div>
-
                 </div>
 
-
                 <div class="left-questions">
-
                     <div class="question">
                         <p>Who’s doing all the work?</p>
                         <div class="icon-frame-faq">
@@ -329,19 +483,87 @@
             </div>
 
         </section>
-        
 
+
+
+        <!-- LAUNCH SECTION -->
+        <section class="grid-with-2-equal-columns sales container-large large-margin-top" id="hiw">
+
+            <div class="launch-section talk-to-sales">
+                <div class="launch-section-title">
+                    <h2 class="section-title no-margin">Talk to Sales</h2>
+                </div>
+                
+                <div class="lauch-section-description">
+                    <p class="description-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis incidunt ipsam reiciendis perferendis deserunt eos nihil, dignissimos sapiente libero rem eius facilis suscipit, distinctio officia illo! Iste, numquam fugiat.
+                    </p>
+                </div>
+
+                <div class="launch-steps">
+
+                    <div class="launch-step">
+                        <div class="icon-frame email-icon">
+                            <ion-icon name="mail-outline" class="icon"></ion-icon>
+                        </div>
+                        <div class="text-explanation">
+                            <p class="title">E-mail us</p>
+                            <p class="paragraph">hello@viterbi.ai</p>
+                        </div>             
+                    </div>
+
+                    <div class="launch-step">
+                        <div class="icon-frame call-icon">
+                            <ion-icon name="call-outline" class="icon"></ion-icon>
+                        </div>
+                        <div class="text-explanation">
+                            <p class="title">Call us</p>
+                            <p class="paragraph">+1 (628) 800-6843</p>
+                        </div>             
+                    </div>
+
+                    
+
+                </div>
+            </div>
+
+            <div class="launch-img" style="position : relative; border: none">
+                <div class="illustration">
+                    <img src="./assets/team.png" alt="" width="100%" style="position: absolute; left : 0px;top : 50px">       
+                </div>
+            </div>
         
+        </section>
         
+                
     </main>
 
     <footer class="footer container-large large-margin-top">
         <div class="footer-section">
             <p class="copyright-text">&copy; Copyright 2022 Viterbi LLC. All rights reserved</p>
+            <div class="socials">
+                <nav>
+                    <ul class="socials-list">
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin" class="icon-social"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter" class="icon-social"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram" class="icon-social"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>    
+            </div>
         </div>
     </footer>
-
-
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

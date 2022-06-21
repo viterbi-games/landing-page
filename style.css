@@ -16,6 +16,11 @@ body {
 .description-text {
     text-align: left;
     line-height: 36px;
+    color :#495057;
+}
+
+.no-margin {
+    margin : 0;
 }
 
 .feature {
@@ -25,17 +30,32 @@ body {
 
 /*header*/
 .header {
-    display : grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    display : flex;
+    justify-content: space-around;
     align-items: center;
     position : fixed;
-    border-bottom: solid 1px lightgray;
-    padding : 12px;
+    border-bottom: solid 1px #e0dbdb;
+    padding : 12px 6px;
     top : 0;
     left: 0;
     width: 100%;
     background-color: #fff;
     z-index: 10;
+}
+
+.nav-link {
+    color :#495057;
+}
+
+.nav-list {
+    padding : 0 12px;
+}
+
+.nav-items-list {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
 }
 
 .nav-items-list li {
@@ -56,8 +76,12 @@ body {
     gap : 0.8rem;    
 }
 
+.hero-text {
+    padding : 0 400px; text-align: center; line-height: 30px;
+}
+
 .hero-title {
-    font-size: 64px;
+    font-size: 48px;
     margin-bottom: 0;
 }
 
@@ -150,21 +174,121 @@ body {
     gap : 64px;
 }
 
+/*plan section*/
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap : 12px;
+    align-items: flex-start;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    border: solid 1px #ced4da;
+    padding : 24px;
+}
+
+.plan-title {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.plan-price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.redirect-icon-frame {
+    background-color: #000;
+    border-radius : 5px;
+    padding : 8px;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.feature-icon {
+    font-size: 24px;
+}
+
+.redirect-icon {
+    font-size: 18px;
+    color : #fff;
+} 
+
+.feature-ctb a.btn {
+    background-color: #000;
+}
+
+.plan-features {
+    display : flex;
+    flex-direction: column;
+    gap : 12px;
+}
+
+.feature {
+    display : flex;
+    align-items: center;
+    gap : 12px;
+}
+
+
+.plan-text-description {
+    text-align: left;
+    line-height: 28px;
+    color : #868e96;
+}
+
+/*talk to sales section*/
+.sales {
+    background-color: #fbfbfb;
+}
+
+.talk-to-sales {
+    padding: 60px 0;
+}
+
+.call-icon {
+    background-color: #ffe05c;
+}
+
+.email-icon {
+    background-color: #683f1d;
+}
+
 /*footer section*/
 .footer-section {
-    padding : 18px 0;
+    padding : 1px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-top : solid 1px #000;
+}
+
+.icon-social {
+    font-size: 24px;
+    color : #000;
 }
 
 .copyright-text {
     text-align: left;
 }
 
+.socials-list {
+    display: flex;
+    gap : 18px;
+}
+
+.socials-list li {
+    list-style : none;
+}
 
 /*HELPER CLASSES*/ 
 .container-large {
     padding: 0 300px;
-    text-align: center;
 }
 
 .text-center {
