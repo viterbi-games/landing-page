@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./styles/mediaqueries.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="index.js"></script>
     <title>Viterbi - Turn your computer into a game studio</title>
 </head>
 
@@ -39,36 +41,44 @@
                 </nav>
             </section>
             <section class="cta-button">
-                <a href="#" class="btn"> See Demos </a>
+                <a href="#" class="btn">Sign up</a>
             </section>
         </div>
 
         <!-- navbar for mobile devices -->
         <div class="nav-mobile">
 
-            <div class="nav-header relative-positioned">
+            <div class="nav-header">
                 <section class="logo">
                     <img src="./assets/logo.svg" alt="Viterbi logo" width="130" />
                 </section>
                 <section class="cta-button">
-                    <input id="toggle" type="checkbox">
-    
-                    <label class="toggle-container" for="toggle">
-                      <span class="button button-toggle"></span>
-                    </label>
-                
-                    <!-- The Nav Menu -->
-                    <nav class="nav">
-                      <a class="nav-item" href="">Dashboard</a>
-                      <a class="nav-item" href="">History</a>
-                      <a class="nav-item" href="">Statistics</a>
-                      <a class="nav-item" href="">Settings</a>
-                    </nav>
+                    <ion-icon name="menu-outline" class="mobile-nav-icon open" id="close-btn"></ion-icon>
+                    <ion-icon name="close-outline" class="mobile-nav-icon" id="open-btn"></ion-icon>
                 </section>
             </div>
 
-           
-
+            <div class="nav-body">
+                <nav class="mobile-primary-nav" >
+                    <ul class="mobile-nav-lists">
+                        <li class="mobile-nav-list">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="mobile-nav-list">
+                            <a href="#">Why Viterbi?</a>
+                        </li>
+                        <li class="mobile-nav-list">
+                            <a href="#">How it works?</a>
+                        </li>
+                        <li class="mobile-nav-list">
+                            <a href="#">FAQ</a>
+                        </li>   
+                        <li class="mobile-nav-list">
+                            <a href="#">Sign up</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         
     </header>
