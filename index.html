@@ -46,19 +46,28 @@
         <!-- navbar for mobile devices -->
         <div class="nav-mobile">
 
-            <div class="nav-header">
+            <div class="nav-header relative-positioned">
                 <section class="logo">
                     <img src="./assets/logo.svg" alt="Viterbi logo" width="130" />
                 </section>
                 <section class="cta-button">
-                    <a href="#" class="btn"> See Demos </a>
+                    <input id="toggle" type="checkbox">
+    
+                    <label class="toggle-container" for="toggle">
+                      <span class="button button-toggle"></span>
+                    </label>
+                
+                    <!-- The Nav Menu -->
+                    <nav class="nav">
+                      <a class="nav-item" href="">Dashboard</a>
+                      <a class="nav-item" href="">History</a>
+                      <a class="nav-item" href="">Statistics</a>
+                      <a class="nav-item" href="">Settings</a>
+                    </nav>
                 </section>
             </div>
 
-            <div class="nav-body">
-
-
-            </div>
+           
 
         </div>
         
