@@ -59,6 +59,10 @@ body {
     z-index: 10;
 }
 
+.nav-mobile {
+    display: none;
+}
+
 .nav-link {
     color :#495057;
 }

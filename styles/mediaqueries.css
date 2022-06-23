@@ -109,6 +109,31 @@
         display: none;
     }
 
+    .nav-mobile {
+        display : block;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+    .nav-mobile {
+        position: fixed;
+        width: 100%;
+        top : 0;
+        left: 0;
+    }
+
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-header {
+        display : flex;
+        padding : 18px;
+        justify-content: space-between;
+    }
+
+
     .template-details p, .popular-plans h2, .popular-plans p {
         text-align: center;
     }
@@ -169,6 +194,13 @@
     .product-features p, .product-features h2 {
         text-align: center;
     }
+
+    .cool-back-pattern {
+        padding-top: 17.0rem;
+        height: 100%;
+        padding-bottom: 8.0rem;
+        background-color: #ffffff;
+    }
     
 
 }
@@ -185,7 +217,6 @@
     .popular-plans p {
         padding: 0;
     }
-    
 }
 
 /**************************/
@@ -199,9 +230,6 @@
         padding-bottom: 8.0rem;
         background-color: #ffffff;
     }
-
-
-    
 
     .grid-with-4-equal-columns {
         display: grid;
