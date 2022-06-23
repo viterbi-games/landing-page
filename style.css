@@ -1,4 +1,11 @@
 /*general style*/
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+}
+
 body {
     text-align: center;
     margin: 0;
@@ -9,12 +16,21 @@ body {
 
 .section-title {
     font-family: 'Linear Sans', sans-serif;
-    font-size: 36px;
+    font-size: 3.6rem;
     text-align: left;
+}
+
+.relative-positioned {
+    position: relative;
+}
+
+.bold-text {
+    font-weight: 700;
 }
 
 .description-text {
     text-align: left;
+    font-size: 1.6rem;
     line-height: 36px;
     color :#495057;
 }
@@ -23,10 +39,10 @@ body {
     margin : 0;
 }
 
-.feature {
-    text-align: left;
+.secondary-info {
+    color : #868e96;
+    font-size: 1.4rem;
 }
-
 
 /*header*/
 .header {
@@ -35,7 +51,7 @@ body {
     align-items: center;
     position : fixed;
     border-bottom: solid 1px #e0dbdb;
-    padding : 12px 6px;
+    padding : 1.2rem 0.6rem;
     top : 0;
     left: 0;
     width: 100%;
@@ -48,14 +64,18 @@ body {
 }
 
 .nav-list {
-    padding : 0 12px;
+    padding : 0 1.2rem;
+}
+
+.nav-link {
+    font-size: 1.6rem;
 }
 
 .nav-items-list {
     display : flex;
     justify-content: center;
     align-items: center;
-    gap : 10px;
+    gap : 1.0rem;
 }
 
 .nav-items-list li {
@@ -67,8 +87,12 @@ body {
 }
 
 /*main*/
-.main {
-    padding-top: 170px;
+.cool-back-pattern {
+    padding-top: 17.0rem;
+    height: 100vh;
+    padding-bottom: 5.0rem;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%236952f9' fill-opacity='0.02' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /*main - hero*/
@@ -76,12 +100,16 @@ body {
     gap : 0.8rem;    
 }
 
+.plan-section {
+    position: relative;
+}
+
 .hero-text {
-    padding : 0 400px; text-align: center; line-height: 30px;
+    text-align: center; line-height: 3.0rem;
 }
 
 .hero-title {
-    font-size: 48px;
+    font-size: 4.8rem;
     margin-bottom: 0;
 }
 
@@ -102,10 +130,6 @@ body {
 
 .template-description {
     line-height: 30px;
-}
-
-.secondary-info {
-    color : #868e96;
 }
 
 /*launch section*/
@@ -137,72 +161,17 @@ body {
     font-size: 18px;
 }
 
-.icon-frame {
-    background-color: #6952f9;
-    border-radius: 10px;
-    display: inline-block;
-    padding : 24px;
-}
-
+/*why viterbi section*/
 .icon {
-   color : #fff;
-   font-size: 32px;
-}
-
-/*faq sections*/
-.faq-two-sections {
-    display : flex;
-    gap : 84px;
-}
-
-.left-questions, .right-questions {
-    display : flex;
-    flex-direction: column;
-}
-
-.question-box {
-    display: flex;
-    flex-direction: column;
-}
-
-.asnwer p {
-    text-align: left;
-    color : #000;
-}
-
-.asnwer {
-    background-color: #fbfbfb;
-}
-
-.question-first-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.question {
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.icon-frame-faq  {
-    display: flex;
-    justify-content: center;
+    background-color: #6952f9;
     border-radius: 5px;
-    background-color: #000;
-    align-items: center;
-    width : 40px;
-    height: 40px;
+    padding : 1.8rem;
+    color : #fff;
+    font-size: 32px;
 }
 
-.icon-frame-faq .icon {
-    font-size: 24px;
-}
-
-.question {
-    display: flex;
-    justify-content: space-between;
-    gap : 64px;
+.extra-space {
+    padding : 8.0rem 0;
 }
 
 /*plan section*/
@@ -222,6 +191,10 @@ body {
     font-size: 18px;
     text-align: left;
     font-weight: 700;
+}
+
+.feature-text {
+    font-size: 1.6rem;
 }
 
 .plan-price {
@@ -262,8 +235,10 @@ body {
 
 .feature {
     display : flex;
-    align-items: center;
+    text-align: left;
+    flex-direction: column;
     gap : 12px;
+    padding: 0;
 }
 
 
@@ -273,9 +248,79 @@ body {
     color : #868e96;
 }
 
+/*faq sections*/
+.faq-two-sections {
+    display : flex;
+    gap : 84px;
+}
+
+.left-questions, .right-questions {
+    display : flex;
+    flex-direction: column;
+}
+
+.flex-container {
+    display : flex;
+    gap : 18px;
+    align-items: center;
+}
+
+.question-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.asnwer p {
+    text-align: left;
+    color : #000;
+}
+
+.asnwer {
+    background-color: #fbfbfb;
+}
+
+.question-first-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.faq-icon {
+    background-color: #000;
+    border-radius: 5px;
+    padding : 1.2rem;
+    color : #fff;
+    font-size: 2.4rem;    
+}
+
+.icon-frame-faq .icon {
+    font-size: 24px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    gap : 64px;
+}
+
+
 /*talk to sales section*/
 .call-icon {
     background-color: #ffe05c;
+}
+
+.contact-illustration-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .email-icon {
@@ -311,7 +356,9 @@ body {
 
 /*HELPER CLASSES*/ 
 .container-large {
-    padding: 0 300px;
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
 }
 
 .colored-bckgrnd {
@@ -319,7 +366,7 @@ body {
 }
 
 .top-down-padding {
-    padding: 60px 0;
+    padding: 6.0rem 0;
 }
 
 
@@ -348,7 +395,6 @@ body {
     display: grid;
     gap : 16px;
     grid-template-columns: repeat(4, 1fr);
-
 }
 
 .grid-with-2-equal-columns {
@@ -392,11 +438,54 @@ body {
     border-radius: 85px;
     background-color: #6952f9;
     color: #fff;
-    font-size: 0.875rem;
+    font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
 }
 
 .highlight-feature {
     color :#6952f9;
+}
+
+
+/*WAVES ON THE WHY VITERBI SECTION*/
+.custom-shape-divider-top-1655836755 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1655836755 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 47px;
+}
+
+.custom-shape-divider-top-1655836755 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1655836818 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1655836818 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 24px;
+}
+
+.custom-shape-divider-bottom-1655836818 .shape-fill {
+    fill: #FFFFFF;
 }

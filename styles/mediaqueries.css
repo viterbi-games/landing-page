@@ -1,0 +1,227 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Medium sized and Smaller desktops) */
+/**************************/
+
+  @media (max-width: 94em) {
+    .container-large {
+        max-width: 100rem;
+        padding: 0 3.2rem;
+        margin: 0 auto;
+    }  
+
+    .large-margin-top {
+        margin-top: 8.0rem;
+    }
+
+    .top-down-padding {
+        padding: 8.0rem 0;
+    }
+    
+}
+    
+
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+    .grid-with-3-equal-columns {
+        display : grid;
+        gap : 18px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-with-4-equal-columns {
+        display: grid;
+        gap : 16px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .top-down-padding {
+        padding: 0;
+    }
+
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+    .container-large {
+        max-width: 80rem;
+        padding: 0 3.2rem;
+        margin: 0 auto;
+    }  
+
+    .grid-with-3-equal-columns {
+        display : grid;
+        gap : 18px;
+        justify-content: center;
+        grid-template-columns:  1fr;
+    }
+
+    .cool-back-pattern {
+        padding-top: 17.0rem;
+        height: 1050px;
+        padding-bottom: 8.0rem;
+        background-color: #ffffff;
+    }
+
+    .grid-with-2-equal-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .img-section, .launch-img {
+        display: none;
+    }
+
+    .hero-text {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .hero-title {
+        font-size: 3.6rem;
+        margin-bottom: 0;
+    }
+
+    .top-down-padding {
+        padding:3.6rem 0;
+    }
+
+    .grid-with-4-equal-columns {
+        display: grid;
+        gap : 16px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .faq-two-sections {
+        display : flex;
+        flex-direction: column;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .template-details p, .popular-plans h2, .popular-plans p {
+        text-align: center;
+    }
+
+    .sales-section-text {
+        text-align: center;
+    }
+
+    .popular-plans p {
+        padding: 0;
+    }
+
+    .footer-section {
+        padding : 1px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-top : solid 1px #000;
+    }
+
+    .cpright-text {
+        text-align: center;
+        margin: 1.2rem 0;
+    }
+
+    .socials-list {
+        display: flex;
+        padding: 0;
+        text-align: center;
+    }
+
+    .question {
+        text-align: left;
+    }
+
+
+    .icon-social {
+        background-color: #6952f9;
+        border-radius: 5px;
+        padding : 1.8rem;
+        color : #fff;
+        font-size: 18px;
+    }
+
+    .feature {
+        display : flex;
+        text-align: center;
+        justify-content: center;
+        gap : 12px;
+        padding: 0;
+    }
+
+    .feature p {
+        text-align: center;
+    }
+
+    .product-features p, .product-features h2 {
+        text-align: center;
+    }
+    
+
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+    .template-details p, .popular-plans h2, .popular-plans p {
+        text-align: center;
+    }
+
+    .popular-plans p {
+        padding: 0;
+    }
+    
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+    .cool-back-pattern {
+        padding-top: 17.0rem;
+        height: 100%;
+        padding-bottom: 8.0rem;
+        background-color: #ffffff;
+    }
+
+
+    
+
+    .grid-with-4-equal-columns {
+        display: grid;
+        gap : 16px;
+        grid-template-columns: 1fr;
+    }
+
+    .template-details p, .popular-plans h2, .popular-plans p {
+        text-align: center;
+    }
+
+    .popular-plans p {
+        padding: 0;
+    }
+}
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
