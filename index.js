@@ -4,8 +4,8 @@ $(function() {
          $('.nav-body').toggleClass("visible");
  
 
-         $('#open-btn').toggleClass('visible');
-         $('#close-btn').toggleClass('visible');
+         $('#open-btn').toggleClass('open');
+         $('#close-btn').toggleClass('open');
         /*
          $('body').toggleClass('hides-overflow');
          $('html').toggleClass('hides-overflow');
