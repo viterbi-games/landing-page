@@ -205,6 +205,18 @@
         padding-bottom: 8.0rem;
         background-color: #ffffff;
     }
+
+    .launch-step {
+        display : flex;
+        flex-direction: column;
+        align-items: center;
+        gap : 16px;
+    }
+
+    
+    .launch-step p, .launch-section p, .launch-section h2 {
+        text-align: center;
+    }
     
 
 }
@@ -220,7 +232,7 @@
 
     .popular-plans p {
         padding: 0;
-    }
+    } 
 }
 
 /**************************/
