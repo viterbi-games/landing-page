@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 .section-title {
@@ -39,7 +39,17 @@ body {
     margin : 0;
 }
 
+.small-margin-top {
+    margin-top : 1.8rem;
+}
+
 .secondary-info {
+    color : #868e96;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.secondary-info-small {
     color : #868e96;
     font-size: 1.4rem;
 }
@@ -181,7 +191,7 @@ body {
 .launch-steps {
     display : flex;
     flex-direction: column;
-    gap : 12px;
+    gap : 18px;
 } 
 
 .launch-img {
@@ -203,6 +213,7 @@ body {
 
 .title {
     font-weight: 700;
+    margin : 0;
     font-size: 18px;
 }
 
@@ -533,4 +544,10 @@ body {
 
 .custom-shape-divider-bottom-1655836818 .shape-fill {
     fill: #FFFFFF;
+}
+
+
+/*background colors*/
+.light-pink-backgrnd {
+   background-color: #ff83fb;
 }
